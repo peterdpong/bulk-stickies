@@ -1,17 +1,10 @@
 {
-    "name": "Bulk Stickies",
-    "id": "bulk-stickies",
-    "api": "1.0.0",
-    "main":"build/main.js",
-    "capabilities": [],
-    "enableProposedApi": false,
-    "editorType": [
-      "figjam"
-    ],
-    "ui":"build/ui.js",
-    "networkAccess": {
-      "allowedDomains": [
-        "none"
-      ]
-    }
-  }
+  "api": "1.0.0",
+  "editorType": [
+    "figjam"
+  ],
+  "id": "bulk-stickies",
+  "name": "Bulk Stickies",
+  "main": "build/main.js",
+  "ui": "build/ui.js"
+}
