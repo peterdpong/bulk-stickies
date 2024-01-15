@@ -1,4 +1,4 @@
-import { Textbox, render } from '@create-figma-plugin/ui'
+import { Button, Container, Divider, Stack, Textbox, VerticalSpace, render, useInitialFocus } from '@create-figma-plugin/ui'
 import { JSX, h } from 'preact'
 import '!./output.css'
 import { useState } from 'preact/hooks';
@@ -19,20 +19,38 @@ function Plugin () {
       if(event.shiftKey) {
         emit('createBulkStickies', stickyList);
         setStickyList([]);
-      } else {
+      } else if(inputValue.length > 0) {
         setStickyList((prevState) => { return prevState.concat(inputValue)});
         setInputValue('');
       }
     } 
   }
+
+  function handleDoneOnClick(event: JSX.TargetedMouseEvent<HTMLButtonElement>) {
+    emit('createBulkStickies', stickyList);
+    setStickyList([]);
+  }
   
   return (
-    <div>
-    <Textbox onInput={handleInput} onKeyUp={handleKeyUp} placeholder="Type your notes!" value={inputValue} />
-    {stickyList.map((stickyContents: string) => {
-      return <h1>{stickyContents}</h1>
-    })}
-    </div>
+    <Container space='small'>
+      <VerticalSpace space="extraSmall" />
+      <Textbox {...useInitialFocus()} onInput={handleInput} onKeyUp={handleKeyUp} placeholder="What's on your mind?" value={inputValue} variant='border' />
+      <VerticalSpace space="extraSmall" />
+
+      {stickyList.length > 0 && 
+      <div>
+        <Button fullWidth onClick={handleDoneOnClick} >Done (Shift + Enter)</Button>
+        <VerticalSpace space="extraSmall" />
+      </div>}
+
+      <Divider/>
+      <div className="flex flex-col-reverse gap-1">
+        {stickyList.map((stickyContents: string, index: number) => {
+          return <h1 key={`${index}`} className='fadeIn'>{stickyContents}</h1>
+        })}
+      </div>
+      
+    </Container>
 
   )
 }

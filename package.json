@@ -22,10 +22,10 @@
   },
   "figma-plugin": {
     "editorType": [
-      "figma"
+      "figjam"
     ],
-    "id": "preact-tailwindcss",
-    "name": "Preact Tailwind Css",
+    "id": "bulk-stickies",
+    "name": "Bulk Stickies",
     "main": "src/main.ts",
     "ui": "src/ui.tsx"
   }
