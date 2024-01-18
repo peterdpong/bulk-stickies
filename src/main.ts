@@ -14,7 +14,7 @@ export default function () {
   on('createBulkStickies', handleCreateBulkStickies)
 
   showUI({
-    height: 160,
-    width: 240
+    height: 320,
+    width: 280
   })
 }

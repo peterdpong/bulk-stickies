@@ -1,4 +1,4 @@
-import { Button, Container, Divider, Stack, Textbox, VerticalSpace, render, useInitialFocus } from '@create-figma-plugin/ui'
+import { Button, Columns, Container, Divider, IconButton, IconTrash32, Stack, Textbox, VerticalSpace, render, useInitialFocus } from '@create-figma-plugin/ui'
 import { JSX, h } from 'preact'
 import '!./output.css'
 import { useState } from 'preact/hooks';
@@ -30,26 +30,31 @@ function Plugin () {
     emit('createBulkStickies', stickyList);
     setStickyList([]);
   }
+
+  function handleDeleteSticky(stickyIndex: number) {
+    setStickyList(stickyList.toSpliced(stickyIndex, 1));
+  }
   
   return (
     <Container space='small'>
       <VerticalSpace space="extraSmall" />
       <Textbox {...useInitialFocus()} onInput={handleInput} onKeyUp={handleKeyUp} placeholder="What's on your mind?" value={inputValue} variant='border' />
       <VerticalSpace space="extraSmall" />
-
-      {stickyList.length > 0 && 
-      <div>
-        <Button fullWidth onClick={handleDoneOnClick} >Done (Shift + Enter)</Button>
-        <VerticalSpace space="extraSmall" />
-      </div>}
-
+      <Button fullWidth onClick={handleDoneOnClick} disabled={stickyList.length === 0} >Done (Shift + Enter)</Button>
+      <VerticalSpace space="extraSmall" />
       <Divider/>
+      <VerticalSpace space="extraSmall" />
       <div className="flex flex-col-reverse gap-1">
         {stickyList.map((stickyContents: string, index: number) => {
-          return <h1 key={`${index}`} className='fadeIn'>{stickyContents}</h1>
+          return (<div key={`${index}`}  className="flex justify-between items-center bg-slate-100 p-2 rounded-md">
+            <p className='fadeIn text-sm'>{stickyContents}</p>
+            <button onClick={() => handleDeleteSticky(index)}>
+              <IconTrash32/>
+            </button>
+
+          </div>)
         })}
       </div>
-      
     </Container>
 
   )

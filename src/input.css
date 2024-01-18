@@ -4,15 +4,21 @@
 
 
 .fadeIn {
-    animation: fadeInAnimation 1s linear;
+    animation: fadeInAnimation 0.35s ease;
+}
+
+.iconButton:focus {
+    border: 0;
 }
   
 @keyframes fadeInAnimation {
     0% {
+        transform: translateY(-5px);
         opacity: 0;
     }
     
     100% {
+        transform: translateY(0px);
         opacity: 1;
     }
 }

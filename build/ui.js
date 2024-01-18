@@ -717,10 +717,10 @@
     }
   });
 
-  // ../../AppData/Local/Temp/ee33c61e-3bd8-445b-80ad-c7e707bece13/loading-indicator.module.js
+  // ../../AppData/Local/Temp/b77db55d-f4d9-49ad-a5c6-3d19df83bf82/loading-indicator.module.js
   var loading_indicator_module_default;
   var init_loading_indicator_module = __esm({
-    "../../AppData/Local/Temp/ee33c61e-3bd8-445b-80ad-c7e707bece13/loading-indicator.module.js"() {
+    "../../AppData/Local/Temp/b77db55d-f4d9-49ad-a5c6-3d19df83bf82/loading-indicator.module.js"() {
       if (document.getElementById("b2647cc4d1") === null) {
         const element = document.createElement("style");
         element.id = "b2647cc4d1";
@@ -781,10 +781,10 @@
     }
   });
 
-  // ../../AppData/Local/Temp/f29cb3fe-1a54-48a4-8e0c-8130ee55c158/button.module.js
+  // ../../AppData/Local/Temp/00e2345f-7c63-463c-a5c3-b034a601d49e/button.module.js
   var button_module_default;
   var init_button_module = __esm({
-    "../../AppData/Local/Temp/f29cb3fe-1a54-48a4-8e0c-8130ee55c158/button.module.js"() {
+    "../../AppData/Local/Temp/00e2345f-7c63-463c-a5c3-b034a601d49e/button.module.js"() {
       if (document.getElementById("49293dce76") === null) {
         const element = document.createElement("style");
         element.id = "49293dce76";
@@ -970,10 +970,50 @@
     }
   });
 
-  // ../../AppData/Local/Temp/74533f4e-f901-402a-aa24-d47f61257314/divider.module.js
+  // ../../AppData/Local/Temp/3447b102-fca9-415d-a5b9-f2f2b27f7602/icon.module.js
+  var icon_module_default;
+  var init_icon_module = __esm({
+    "../../AppData/Local/Temp/3447b102-fca9-415d-a5b9-f2f2b27f7602/icon.module.js"() {
+      if (document.getElementById("4ead7ff24f") === null) {
+        const element = document.createElement("style");
+        element.id = "4ead7ff24f";
+        element.textContent = `._icon_13804_1 {
+  fill: currentColor;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9AY3JlYXRlLWZpZ21hLXBsdWdpbi91aS9saWIvaWNvbnMvaWNvbi5tb2R1bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0FBQ3BCIiwiZmlsZSI6Im5vZGVfbW9kdWxlc1xcQGNyZWF0ZS1maWdtYS1wbHVnaW5cXHVpXFxsaWJcXGljb25zXFxpY29uLm1vZHVsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaWNvbiB7XG4gIGZpbGw6IGN1cnJlbnRDb2xvcjtcbn1cbiJdfQ== */`;
+        document.head.append(element);
+      }
+      icon_module_default = { "icon": "_icon_13804_1" };
+    }
+  });
+
+  // node_modules/@create-figma-plugin/ui/lib/icons/create-icon.js
+  function createIcon(path, options) {
+    const { width, height } = options;
+    return createComponent(function(_a) {
+      var _b = _a, { color } = _b, rest = __objRest(_b, ["color"]);
+      return y(
+        "svg",
+        __spreadProps(__spreadValues({}, rest), { class: icon_module_default.icon, height, style: {
+          fill: typeof color === "undefined" ? "currentColor" : `var(--figma-color-icon-${color})`
+        }, width, xmlns: "http://www.w3.org/2000/svg" }),
+        y("path", { "clip-rule": "evenodd", d: path, "fill-rule": "evenodd" })
+      );
+    });
+  }
+  var init_create_icon = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/icons/create-icon.js"() {
+      init_preact_module();
+      init_create_component();
+      init_icon_module();
+    }
+  });
+
+  // ../../AppData/Local/Temp/1ddedc56-4efa-4d9c-bf51-a3300ccde1a5/divider.module.js
   var divider_module_default;
   var init_divider_module = __esm({
-    "../../AppData/Local/Temp/74533f4e-f901-402a-aa24-d47f61257314/divider.module.js"() {
+    "../../AppData/Local/Temp/1ddedc56-4efa-4d9c-bf51-a3300ccde1a5/divider.module.js"() {
       if (document.getElementById("96884c2ce1") === null) {
         const element = document.createElement("style");
         element.id = "96884c2ce1";
@@ -1196,10 +1236,10 @@
     }
   });
 
-  // ../../AppData/Local/Temp/a45ff025-2f24-44b2-b82c-7942ef4fdf04/textbox.module.js
+  // ../../AppData/Local/Temp/9467ef91-463f-41b5-97b6-6310adc2f82d/textbox.module.js
   var textbox_module_default;
   var init_textbox_module = __esm({
-    "../../AppData/Local/Temp/a45ff025-2f24-44b2-b82c-7942ef4fdf04/textbox.module.js"() {
+    "../../AppData/Local/Temp/9467ef91-463f-41b5-97b6-6310adc2f82d/textbox.module.js"() {
       if (document.getElementById("64c119b35c") === null) {
         const element = document.createElement("style");
         element.id = "64c119b35c";
@@ -1352,10 +1392,19 @@
     }
   });
 
-  // ../../AppData/Local/Temp/80d6a02e-7280-4a52-bf4a-f07c9e472847/container.module.js
+  // node_modules/@create-figma-plugin/ui/lib/icons/icon-32/icon-trash-32.js
+  var IconTrash32;
+  var init_icon_trash_32 = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/icons/icon-32/icon-trash-32.js"() {
+      init_create_icon();
+      IconTrash32 = createIcon("M15 9.5c-.5523 0-1 .44772-1 1h4c0-.55228-.4477-1-1-1zm4 1c0-1.10457-.8954-2-2-2h-2c-1.1046 0-2 .89543-2 2h-3v1h1v10c0 1.1046.8954 2 2 2h6c1.1046 0 2-.8954 2-2v-10h1v-1h-1.5zm1 1h-8v10c0 .5523.4477 1 1 1h6c.5523 0 1-.4477 1-1zm-6 7v-4h1v4zm3 0v-4h1v4z", { height: 32, width: 32 });
+    }
+  });
+
+  // ../../AppData/Local/Temp/58aaf705-07c3-4158-987e-f25c41881759/container.module.js
   var container_module_default;
   var init_container_module = __esm({
-    "../../AppData/Local/Temp/80d6a02e-7280-4a52-bf4a-f07c9e472847/container.module.js"() {
+    "../../AppData/Local/Temp/58aaf705-07c3-4158-987e-f25c41881759/container.module.js"() {
       if (document.getElementById("720f873724") === null) {
         const element = document.createElement("style");
         element.id = "720f873724";
@@ -1396,10 +1445,10 @@
     }
   });
 
-  // ../../AppData/Local/Temp/22e7e107-97d9-4e38-81c7-b1e1dd618f40/vertical-space.module.js
+  // ../../AppData/Local/Temp/35a1acde-e88f-4960-a4c5-cf9c3c66e563/vertical-space.module.js
   var vertical_space_module_default;
   var init_vertical_space_module = __esm({
-    "../../AppData/Local/Temp/22e7e107-97d9-4e38-81c7-b1e1dd618f40/vertical-space.module.js"() {
+    "../../AppData/Local/Temp/35a1acde-e88f-4960-a4c5-cf9c3c66e563/vertical-space.module.js"() {
       if (document.getElementById("ca5e316118") === null) {
         const element = document.createElement("style");
         element.id = "ca5e316118";
@@ -1440,9 +1489,9 @@
     }
   });
 
-  // ../../AppData/Local/Temp/fdbfae42-39c7-4c28-9806-2fa4805f9b91/base.js
+  // ../../AppData/Local/Temp/241ce52d-19c1-4624-9b33-c6efd376fda6/base.js
   var init_base = __esm({
-    "../../AppData/Local/Temp/fdbfae42-39c7-4c28-9806-2fa4805f9b91/base.js"() {
+    "../../AppData/Local/Temp/241ce52d-19c1-4624-9b33-c6efd376fda6/base.js"() {
       if (document.getElementById("f076a3cf4a") === null) {
         const element = document.createElement("style");
         element.id = "f076a3cf4a";
@@ -1569,15 +1618,16 @@ svg {
       init_divider();
       init_textbox();
       init_use_initial_focus();
+      init_icon_trash_32();
       init_container();
       init_vertical_space();
       init_render();
     }
   });
 
-  // ../../AppData/Local/Temp/f8dea583-8385-492d-bc8f-99133af80fa7/output.js
+  // ../../AppData/Local/Temp/60bb2aee-b6ff-4f9f-8953-9bd7efb15429/output.js
   var init_output = __esm({
-    "../../AppData/Local/Temp/f8dea583-8385-492d-bc8f-99133af80fa7/output.js"() {
+    "../../AppData/Local/Temp/60bb2aee-b6ff-4f9f-8953-9bd7efb15429/output.js"() {
       if (document.getElementById("db476c6d78") === null) {
         const element = document.createElement("style");
         element.id = "db476c6d78";
@@ -2139,21 +2189,77 @@ video {
   flex-direction: column-reverse;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.content-center {
+  align-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-1 {
   gap: 0.25rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .border {
   border-width: 1px;
+}
+
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -2165,15 +2271,21 @@ video {
 }
 
 .fadeIn {
-  animation: fadeInAnimation 1s linear;
+  animation: fadeInAnimation 0.35s ease;
+}
+
+.iconButton:focus {
+  border: 0;
 }
 
 @keyframes fadeInAnimation {
   0% {
+    transform: translateY(-5px);
     opacity: 0;
   }
 
   100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }`;
@@ -2212,8 +2324,11 @@ video {
       emit("createBulkStickies", stickyList);
       setStickyList([]);
     }
-    return /* @__PURE__ */ y(Container, { space: "small" }, /* @__PURE__ */ y(VerticalSpace, { space: "extraSmall" }), /* @__PURE__ */ y(Textbox, __spreadProps(__spreadValues({}, useInitialFocus()), { onInput: handleInput, onKeyUp: handleKeyUp, placeholder: "What's on your mind?", value: inputValue, variant: "border" })), /* @__PURE__ */ y(VerticalSpace, { space: "extraSmall" }), stickyList.length > 0 && /* @__PURE__ */ y("div", null, /* @__PURE__ */ y(Button, { fullWidth: true, onClick: handleDoneOnClick }, "Done (Shift + Enter)"), /* @__PURE__ */ y(VerticalSpace, { space: "extraSmall" })), /* @__PURE__ */ y(Divider, null), /* @__PURE__ */ y("div", { className: "flex flex-col-reverse gap-1" }, stickyList.map((stickyContents, index) => {
-      return /* @__PURE__ */ y("h1", { key: `${index}`, className: "fadeIn" }, stickyContents);
+    function handleDeleteSticky(stickyIndex) {
+      setStickyList(stickyList.toSpliced(stickyIndex, 1));
+    }
+    return /* @__PURE__ */ y(Container, { space: "small" }, /* @__PURE__ */ y(VerticalSpace, { space: "extraSmall" }), /* @__PURE__ */ y(Textbox, __spreadProps(__spreadValues({}, useInitialFocus()), { onInput: handleInput, onKeyUp: handleKeyUp, placeholder: "What's on your mind?", value: inputValue, variant: "border" })), /* @__PURE__ */ y(VerticalSpace, { space: "extraSmall" }), /* @__PURE__ */ y(Button, { fullWidth: true, onClick: handleDoneOnClick, disabled: stickyList.length === 0 }, "Done (Shift + Enter)"), /* @__PURE__ */ y(VerticalSpace, { space: "extraSmall" }), /* @__PURE__ */ y(Divider, null), /* @__PURE__ */ y(VerticalSpace, { space: "extraSmall" }), /* @__PURE__ */ y("div", { className: "flex flex-col-reverse gap-1" }, stickyList.map((stickyContents, index) => {
+      return /* @__PURE__ */ y("div", { key: `${index}`, className: "flex justify-between items-center bg-slate-100 p-2 rounded-md" }, /* @__PURE__ */ y("p", { className: "fadeIn text-sm" }, stickyContents), /* @__PURE__ */ y("button", { onClick: () => handleDeleteSticky(index) }, /* @__PURE__ */ y(IconTrash32, null)));
     })));
   }
   var ui_default;

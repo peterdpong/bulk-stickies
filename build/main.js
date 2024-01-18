@@ -182,8 +182,8 @@ function main_default() {
   }
   on("createBulkStickies", handleCreateBulkStickies);
   showUI({
-    height: 160,
-    width: 240
+    height: 320,
+    width: 280
   });
 }
 var init_main = __esm({
