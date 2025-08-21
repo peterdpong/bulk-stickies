@@ -36,7 +36,7 @@ var __copyProps = (to, from, except, desc) => {
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// node_modules/@create-figma-plugin/utilities/lib/events.js
+// node_modules/.pnpm/@create-figma-plugin+utilities@4.0.2/node_modules/@create-figma-plugin/utilities/lib/events.js
 function on(name, handler) {
   const id = `${currentId}`;
   currentId += 1;
@@ -59,7 +59,7 @@ function invokeEventHandler(name, args) {
 }
 var eventHandlers, currentId;
 var init_events = __esm({
-  "node_modules/@create-figma-plugin/utilities/lib/events.js"() {
+  "node_modules/.pnpm/@create-figma-plugin+utilities@4.0.2/node_modules/@create-figma-plugin/utilities/lib/events.js"() {
     eventHandlers = {};
     currentId = 0;
     if (typeof window === "undefined") {
@@ -92,7 +92,7 @@ var init_events = __esm({
   }
 });
 
-// node_modules/@create-figma-plugin/utilities/lib/node/load-fonts-async.js
+// node_modules/.pnpm/@create-figma-plugin+utilities@4.0.2/node_modules/@create-figma-plugin/utilities/lib/node/load-fonts-async.js
 async function loadFontsAsync(nodes) {
   const result = {};
   for (const node of nodes) {
@@ -138,11 +138,11 @@ function createKey(fontName) {
   return `${fontName.family}-${fontName.style}`;
 }
 var init_load_fonts_async = __esm({
-  "node_modules/@create-figma-plugin/utilities/lib/node/load-fonts-async.js"() {
+  "node_modules/.pnpm/@create-figma-plugin+utilities@4.0.2/node_modules/@create-figma-plugin/utilities/lib/node/load-fonts-async.js"() {
   }
 });
 
-// node_modules/@create-figma-plugin/utilities/lib/ui.js
+// node_modules/.pnpm/@create-figma-plugin+utilities@4.0.2/node_modules/@create-figma-plugin/utilities/lib/ui.js
 function showUI(options, data) {
   if (typeof __html__ === "undefined") {
     throw new Error("No UI defined");
@@ -153,13 +153,13 @@ function showUI(options, data) {
   }));
 }
 var init_ui = __esm({
-  "node_modules/@create-figma-plugin/utilities/lib/ui.js"() {
+  "node_modules/.pnpm/@create-figma-plugin+utilities@4.0.2/node_modules/@create-figma-plugin/utilities/lib/ui.js"() {
   }
 });
 
-// node_modules/@create-figma-plugin/utilities/lib/index.js
+// node_modules/.pnpm/@create-figma-plugin+utilities@4.0.2/node_modules/@create-figma-plugin/utilities/lib/index.js
 var init_lib = __esm({
-  "node_modules/@create-figma-plugin/utilities/lib/index.js"() {
+  "node_modules/.pnpm/@create-figma-plugin+utilities@4.0.2/node_modules/@create-figma-plugin/utilities/lib/index.js"() {
     init_events();
     init_load_fonts_async();
     init_ui();

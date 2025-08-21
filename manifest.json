@@ -3,8 +3,10 @@
   "editorType": [
     "figjam"
   ],
-  "id": "bulk-stickies",
+  "id": "1540163652603036848",
   "name": "Bulk Stickies",
   "main": "build/main.js",
-  "ui": "build/ui.js"
+  "ui": "build/ui.js",
+  "networkAccess": { "allowedDomains": ["none"] },
+  "documentAccess": "dynamic-page"
 }
